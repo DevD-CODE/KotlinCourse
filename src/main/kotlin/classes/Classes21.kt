@@ -1,7 +1,7 @@
 package classes
 
 interface A_ {
-    fun funFromA() {}
+    fun funFromA()
 }
 interface B_
 

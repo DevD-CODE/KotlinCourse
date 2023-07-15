@@ -1,6 +1,10 @@
 fun main() {
-    val array = ('A'..'Z')
-    array.forEach() {
+    val arr = ('A'..'Z')
+    arr.printInOneLine()
+}
+
+fun CharRange?.printInOneLine() {
+    this?.forEach {
         print("$it ")
     }
 }

@@ -7,11 +7,11 @@ fun main() {
     val box2 = Box("Hola mundo")
     println(box2)
 
-    box2.print(box2.get())
+    box2.print()
 }
 
-fun <T> Box<T>.print(t : T) {
-    println(t.toString())
+fun <T> Box<T>.print() {
+    println(this.toString())
 }
 
 class Box<T>(private var t : T) {

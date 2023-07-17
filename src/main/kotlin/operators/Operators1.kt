@@ -1,10 +1,13 @@
 package operators
 
 fun main() {
-    val point = Point(82, 82)
+    var point = Point(82, 82)
     println(point)
 
     point.transform(-point)
+    println(point)
+
+    point.transform(++point)
     println(point)
 }
 

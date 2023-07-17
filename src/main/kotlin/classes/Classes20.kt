@@ -1,7 +1,7 @@
 package classes
 
 fun main() {
-    val btn = object : Button() {
+    val btn = object : Button {
         override fun consume() {
             println("Clicked")
         }
@@ -10,6 +10,6 @@ fun main() {
     btn.consume()
 }
 
-abstract class Button {
-    abstract fun consume()
+interface Button {
+    fun consume()
 }

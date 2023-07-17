@@ -3,7 +3,8 @@ package lambdas
 inline fun doActionDouble(action1 : () -> Unit, noinline action2 : () -> Unit) : () -> Unit {
     action1.invoke()
     action2.invoke()
-    return action2
+    val ac2 = action2
+    return ac2
 }
 
 fun main() {

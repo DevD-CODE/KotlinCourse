@@ -1,14 +1,8 @@
 fun main() {
-    val tree = Tree(22)
-    tree.insert(4)
-    tree.insert(2)
-    tree.insert(6)
-    tree.insert(10)
-    tree.insert(8)
-    tree.insert(14)
-    tree.insert(16)
-    tree.insert(18)
-    tree.insert(20)
+    val tree = Tree(82)
+    for(i in 0 until 20) {
+        tree.insert((Math.random() * 100).toInt())
+    }
 
     tree.preOrder(tree)
     println()
